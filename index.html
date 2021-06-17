@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <metas name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"></metas>
+
+    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+    <!-- <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
+    <!-- <meta name="theme-color" content="#ffffff"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/Z-logo.png">
+    <title>Ziyad's Portfolio</title>
+    <style>
+        body {
+            margin: 0px;
+            background: #e9edf0;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        header.top {
+            background-color: white;
+            /* position: fixed; */
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        /* div.header {
+            background-color: grey;
+        } */
+
+        div.left {
+            /* border: 2px solid red; */
+            /* display: inline-block;
+            position: absolute; */
+            left: 15px;
+            top: 15px;
+        }
+
+        .left img {
+            filter: invert(1);
+            width: 80px;
+        }
+
+        div.mid {
+            /* border: 2px solid yellow; */
+            /* display: block; */
+            width: 33%;
+            margin: 0px;
+            top: 0px;
+            text-align: center;
+            flex-grow: 2;
+            font-size: 40px;
+            font-family: 'Tangerine', cursive;
+        }
+
+        div.mid h3 {
+            margin: 0px;
+            margin-top: 10px;
+
+            font-weight: lighter;
+        }
+
+        div.right {
+            /* border: 2px solid green; */
+            /* display: inline-block; */
+            /* position: absolute; */
+            right: 20px;
+            top: 15px;
+            text-align: center;
+            align-self: center;
+            flex-shrink: 1;
+        }
+
+        li {
+            list-style: none;
+            float: right;
+            padding-right: 36px;
+        }
+
+        li a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+            /* height: 30px; */
+            font-size: 20px;
+        }
+
+        li .btn {
+            background: transparent;
+            border: 0px;
+            height: 28px;
+        }
+
+        li .btn:hover {
+
+            background: rgba(247, 247, 115, 0.767);
+            border-radius: 10px;
+        }
+
+        li .btn.active {
+            background: rgba(247, 247, 115, 0.767);
+            border-radius: 10px;
+
+        }
+
+
+        ul#nav {
+            /* overflow: auto; */
+            display: flex;
+
+        }
+
+        div.header {
+            display: flex;
+            text-align: center;
+        }
+
+        section.body {
+            display: flex;
+            /* border: 3px solid rgba(247, 247, 115, 0.767); */
+            margin-top: 40px;
+            background: white;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+
+        }
+
+        div.sidebar {
+            width: 20%;
+            height: 100%;
+            /* border: 2px solid yellow; */
+            /* position: fixed; */
+
+        }
+
+        div.namesection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #undergrad {
+            margin-left: 33px;
+            margin-top: 20px;
+            background: rgba(128, 128, 128, 0.322);
+            /* background: #e9edf0; */
+            border: 0px;
+            border-radius: 10px;
+            font-family: 'Josefin Sans', sans-serif;
+            height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            /* width: 50%; */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        #ziyad {
+            margin: 5px;
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        #khan {
+            padding-top: 5px;
+            font-size: 40px;
+            /* height: 20px; */
+        }
+
+        div.mainbody {
+            width: 80%;
+            height: 100%;
+            /* border: 2px solid red; */
+            padding: 10px;
+            padding-top: 3px;
+            /* position: relative; */
+            /* right: 0px; */
+            /* left: 20%; */
+
+        }
+
+        div#aboutme h3 {
+            font-size: 35px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        div#skills h3 {
+
+            font-size: 35px;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            height: 5px;
+            display: inline-block;
+            width: 45px;
+            background: linear-gradient(to right, rgb(247, 247, 115) 20%, #09a1ff 20%);
+            border-radius: 10px;
+            padding-left: 20px;
+            border: white;
+        }
+
+        div.iconset {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            justify-content: space-evenly;
+        }
+
+        #introtext {
+            line-height: 1.5rem;
+        }
+
+        /* div.interests{
+            display: flex;
+        } */
+        div.box {
+            /* display: flex; */
+            display: inline-block;
+            /* flex-direction: row; */
+            border: 3px solid rgba(247, 247, 115, 0.767);
+            /* background: grey; */
+            width: 30%;
+            height: 175px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px grey;
+        }
+
+        div.box img {
+            padding-left: 35%;
+            display: inline;
+        }
+
+        h4 {
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img#codecademy {
+            /* box-sizing: border-box; */
+            /* width: 10px; */
+            size: 64px;
+        }
+
+        img#VIT {
+            filter: invert(1);
+        }
+
+        img#codecademy {
+            padding-top: 10px;
+        }
+
+        div.progressbar {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        div.progressbar2 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        div.skill {
+            width: 700px;
+        }
+
+        div.contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* vertical-align: center; */
+            padding: 5px;
+            padding-top: 35px;
+            padding-left: 20px;
+        }
+        div.dob{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        div.mail{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        div.mobile{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        span.text{
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        footer {
+            background-color: white;
+            
+            /* position: fixed; */
+            margin: 15px;
+            border-radius: 10px;
+            text-align: center;
+            height: 30px;
+        }
+        footer span{
+            position: relative;
+            top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="top">
+        <div class="header">
+
+            <div class="left">
+                <img src="/images-removebg-preview.png" alt="">
+
+            </div>
+
+            <div class="mid">
+                <h3>"Perseverance through Patience"</h3>
+            </div>
+
+            <div class="right">
+                <nav class="navbar">
+                    <ul id="nav">
+                        <li><button class="btn"><a href="#aboutme">About</a></button></li>
+
+                        <li><button class="btn"><a href="#skills">Skills</a></button></li>
+                        <li><button class="btn"><a href="/Ziyad's Resume.pdf">Resume</a></button></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <section class="body">
+        <div class="sidebar">
+            <div class="namesection">
+                <h3 class="name" id="ziyad">Ziyad</h3><span class="name" id="khan">Khan</span>
+            </div>
+            <button id="undergrad">Undergraduate Student</button>
+            <div class="iconset">
+                <a
+                    href="https://www.linkedin.com/in/ziyad-khan-9349061a3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bq6F4Tcy2QkSrvlAp8Lmugw%3D%3D"><img
+                        src="https://img.icons8.com/windows/32/000000/linkedin-2.png" /></a>
+                <a href="https://www.instagram.com/ziyadk44/"><img
+                        src="https://img.icons8.com/windows/32/000000/instagram-new.png" /></a>
+                <a href="https://github.com/ziyadk44/"><img
+                        src="https://img.icons8.com/material-rounded/32/000000/github.png" /></a>
+            </div>
+            <div class="contact">
+                <div class="dob">
+                     <img src="https://img.icons8.com/windows/32/000000/planner.png" /><span  class="text"> Nov 16, 2002</span>
+                </div>
+                <div class="mail">
+                    <img src="https://img.icons8.com/material-outlined/32/000000/mail.png"/><span class="text"><a href="mailto:ziyadk44@gmail.com" style="text-decoration: none; color: black;">ziyadk44@gmail.com</a></span>
+                </div>
+                <div class="mobile">
+                    <img src="https://img.icons8.com/windows/24/000000/phone-disconnected.png"/><span class="text"><a href="tel:+917828692989" style="text-decoration: none; color: black;">+91-7828692989</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainbody">
+            <div id="aboutme">
+                <h3>About Me</h3>
+                <hr>
+                <p id="introtext">
+                    Zealous and Zesty with a Zenful disposition. Hi! this is Ziyad Khan for you. A Tech enthusiast by
+                    nature and a Web Developer by interest.
+                    <br>
+                    An undergrad engineering student presently pursuing Btech in Computer Science from VIT, Bhopal.
+                    <br>
+                    <br>
+                    A charismatic personality working towards the fullness of life. I believe in growth; excelling
+                    individually and mutually.
+                    A visionary man and the founder of a youth led startup Incentive Model UN conference.
+                    <br>
+                    <br>
+                    Calm yet steady and this keeps my boat afloat.
+                </p>
+
+                <div class="interests">
+
+                    <div class="box" id="box1"><img
+                            src="https://img.icons8.com/plasticine/100/000000/user-location.png" />
+                        <h4>Bhopal, India</h4>
+                    </div>
+                    <div class="box" id="box2"><img
+                            src="https://img.icons8.com/color/100/000000/cycling-road--v1.png" />
+                        <h4>Cycling Enthusiast</h4>
+                    </div>
+                    <div class="box" id="box3"><img src="https://img.icons8.com/bubbles/100/000000/micro.png" />
+                        <h4>Active Debater</h4>
+                    </div>
+                    <div class="box" id="box4"><img id="codecademy" src="/favicon-96x96.png" alt="">
+                        <h4>Core Team Member</h4>
+                    </div>
+                    <div class="box" id="box5"><img
+                            src="https://img.icons8.com/bubbles/100/000000/graduation-cap.png" />
+                        <h4>Btech CSE</h4>
+                    </div>
+                    <div class="box" id="box6"><img
+                            src="https://img.icons8.com/color/100/000000/designer-skin-type-3.png" />
+                        <h4>Graphic Designer</h4>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="skills">
+                <h3>My Skills</h3>
+                <hr>
+                <div class="progressbar">
+                    <div class="skill" id="python">
+                        <label for="file">Python</label><br>
+                        <progress id="file" value="80" max="100" style="height: 22px;"></progress>
+                    </div>
+
+                    <div class="skill" id="C++">
+                        <label for="file">C++</label><br>
+                        <progress id="file" value="70" max="100" style="height: 22px;"></progress>
+                    </div>
+
+                </div>
+                <div class="progressbar2">
+
+                    <div class="skill" id="HTML">
+                        <label for="file">HTML</label><br>
+                        <progress id="file" value="95" max="100" style="height: 22px;"></progress>
+                    </div>
+
+                    <div class="skill" id="CSS">
+                        <label for="file">CSS</label><br>
+                        <progress id="file" value="90" max="100" style="height: 22px;"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer><span>Feel Free To Contact Anytime</span></footer>
+</body>
+
+</html>
